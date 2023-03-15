@@ -1,28 +1,16 @@
 import React from "react";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 
 const styles = {
   headerColor: {
     background: "#E4EFE7",
   },
 };
-function Header() {
+function Header({ setCurrentPage }) {
   return (
     <header className="App-header">
       <h1>Anthony Nguyen</h1>
-      <Navbar />
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+      <Navbar setCurrentPage={setCurrentPage} />
     </header>
   );
 }

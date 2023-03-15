@@ -1,11 +1,11 @@
 import React from "react";
 
-function Navbar() {
+function Navbar({ setCurrentPage }) {
   return (
     <nav>
-      <a>Projects</a>
-      <a>About Me</a>
-      <a>Contact Me</a>
+      <a onClick={() => setCurrentPage("Projects")}>Projects</a>
+      <a onClick={() => setCurrentPage("About")}>About Me</a>
+      <a onClick={() => setCurrentPage("Contact")}>Contact Me</a>
     </nav>
   );
 }
