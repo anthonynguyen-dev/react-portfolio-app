@@ -15,10 +15,10 @@ export default function Project() {
   return (
     <div className="container">
       <h2>Projects</h2>
-      <div className="row">
+      <div className="row justify-content-center">
         {projectArray.map((project, index) => (
           <div key={project.id} className="col-6">
-            <div className="card" style={{ width: "18rem" }}>
+            <div className="card" style={{ width: "18rem", margin: "0 auto" }}>
               <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.description}</p>
